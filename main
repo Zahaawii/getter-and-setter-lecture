@@ -1,0 +1,29 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.println("Skriv dine informationer");
+		
+		System.out.println("Name:");
+		String name = scanner.nextLine();
+		
+		System.out.println("Age:");
+		int age = scanner.nextInt();
+		
+		System.out.println("Address:");
+		String address = scanner.next();
+		
+		Person person1 = new Person (name, age, address);
+		
+		person1.test();
+		
+	}
+
+}
